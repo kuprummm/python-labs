@@ -26,12 +26,12 @@ def test_fractional_division() -> None:
     assert calculate("5 / 2") == Decimal(2.5)
 
 
-def test_one_unary() -> None:
+def test_onece_unary() -> None:
     """Проверка унарного знака."""
     assert calculate("5 *- 2") == Decimal(-10)
 
 
-def test_two_unary() -> None:
+def test_twice_unary() -> None:
     """Проверка унарногых знака."""
     assert calculate("5 *-+ 2") == Decimal(-10)
 
@@ -41,12 +41,12 @@ def test_bigspace() -> None:
     assert calculate("3 -\n3 +\t 1") == Decimal(1)
 
 
-def test_bonus_func_one() -> None:
+def test_bonus_func_division() -> None:
     """Проверка целочисленного деления математического поведения."""
     assert calculate("-7 // 3") == Decimal(-3)
 
 
-def test_bonus_func_two() -> None:
+def test_bonus_func_remainder() -> None:
     """Проверка остатка от деления математического поведения."""
     assert calculate("-7 % 3") == Decimal(2)
 

@@ -1,7 +1,7 @@
 [project]
 name = "labs"
 version = "0.1.0"
-description = "Add your description here"
+description = "Калькулятор и конвертер"
 requires-python = ">=3.12"
 dependencies = [
     "pytest>=8.4.2",
@@ -13,3 +13,15 @@ testpaths = ["tests"]
 [tool.mypy]
 mypy_path = "$MYPY_CONFIG_FILE_DIR/src"
 explicit_package_bases = true
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["toolkit", "toolkit.*"]
+namespaces = false
+
+[tool.setuptools.package-data]
+toolkit = ["conversions.json"]
