@@ -3,18 +3,17 @@ repos:
     rev: v1.18.1
     hooks:
       - id: mypy
-        args: [--show-error-codes, --pretty]
+        args: [--show-error-codes, --pretty, --config-file=lab_01/pyproject.toml]
         additional_dependencies:
           - types-requests
           - types-PyYAML
           - pytest
 
-
-
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.12.0
     hooks:
       - id: ruff-check
+        args: [--config=lab_01/pyproject.toml]
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v6.0.0
