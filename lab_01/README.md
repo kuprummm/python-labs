@@ -33,21 +33,16 @@
 
 Скачать репозиторий:
 
-powershell
 git clone https://github.com/kuprummm/python-labs.git
 cd python-labs
 
-
 Создать и включить виртуальное окружение:
 
-powershell
 python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-
+.venv\Scripts\activate
 
 Из корня `python-labs` установить зависимости и программу:
 
-powershell
 python -m pip install -r lab_01/requirements.txt
 python -m pip install -e ./lab_01
 
@@ -60,19 +55,16 @@ python -m pip install -e ./lab_01
 
 Справка:
 
-powershell
 python -m toolkit --help
 
 Вычисление выражения:
 
-powershell
 python -m toolkit calc "2 + 3 * 4"
 
 Результат: `14`.
 
 Выражение со скобками и минусом:
 
-powershell
 python -m toolkit calc -- "-(2 + 3)"
 
 Результат: `-5`.
@@ -86,14 +78,12 @@ python -m toolkit calc "23---1"
 
 Перевод граммов в килограммы:
 
-powershell
 python -m toolkit convert 1000 --from g --to kg
 
 Результат: `1.0`.
 
 Перевод градусов Цельсия в градусы Фаренгейта:
 
-powershell
 python -m toolkit convert 1 --from c --to f
 
 Результат: `33.8`.
