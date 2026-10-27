@@ -4,3 +4,11 @@ build/
 dist/
 __pycache__/
 *.pyc
+.vscode
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.venv/
+.coverage
+htmlcov/
+lab_02/example/events_500.jsonl

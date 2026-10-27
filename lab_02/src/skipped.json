@@ -1,0 +1,23 @@
+{
+    "total": 7,
+    "by_level": {
+        "DEBUG": 0,
+        "INFO": 2,
+        "WARNING": 2,
+        "ERROR": 1,
+        "CRITICAL": 2
+    },
+    "by_source": {
+        "website": 4,
+        "database": 3
+    },
+    "top_error_sources": [
+        {
+            "source": "database",
+            "count": 3
+        }
+    ],
+    "first_time": "2026-10-14T10:00:00+03:00",
+    "last_time": "2026-10-14T10:03:00+03:00",
+    "skipped": 1
+}

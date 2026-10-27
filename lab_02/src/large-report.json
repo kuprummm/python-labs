@@ -1,0 +1,42 @@
+{
+    "total": 1250000,
+    "by_level": {
+        "DEBUG": 250000,
+        "INFO": 250000,
+        "WARNING": 250000,
+        "ERROR": 250000,
+        "CRITICAL": 250000
+    },
+    "by_source": {
+        "website": 250000,
+        "database": 250000,
+        "worker": 250000,
+        "api": 250000,
+        "scheduler": 250000
+    },
+    "top_error_sources": [
+        {
+            "source": "api",
+            "count": 100000
+        },
+        {
+            "source": "database",
+            "count": 100000
+        },
+        {
+            "source": "scheduler",
+            "count": 100000
+        },
+        {
+            "source": "website",
+            "count": 100000
+        },
+        {
+            "source": "worker",
+            "count": 100000
+        }
+    ],
+    "first_time": "2026-10-23T00:00:00+03:00",
+    "last_time": "2026-10-23T23:59:00+03:00",
+    "skipped": 0
+}

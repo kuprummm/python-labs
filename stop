@@ -1,0 +1,46 @@
+ .gitignore                                         |   8 [32m+[m
+ README.md                                          |  63 [31m-------[m
+ lab_01/README.md                                   | 190 [31m-------------------[m
+ lab_01/src/toolkit/__init__.py                     |   0
+ lab_01/src/toolkit/calculator.py                   | 201 [31m---------------------[m
+ lab_01/src/toolkit/cli.py                          |  43 [31m-----[m
+ lab_01/src/toolkit/constants.py                    |  14 [31m--[m
+ lab_01/src/toolkit/conversions.json                |  12 [31m--[m
+ lab_01/src/toolkit/converter.py                    |  62 [31m-------[m
+ lab_01/src/toolkit/errors.py                       |  38 [31m----[m
+ lab_01/src/toolkit/history.py                      |  24 [31m---[m
+ lab_01/tests/__init__.py                           |   0
+ lab_01/tests/test_calculator.py                    |  75 [31m--------[m
+ lab_01/tests/test_cli.py                           |  27 [31m---[m
+ lab_01/tests/test_converter.py                     |  41 [31m-----[m
+ lab_02/README.md                                   | 178 [32m++++++++++++++++++[m
+ lab_02/example/br.txt                              |   8 [32m+[m
+ lab_02/example/events.csv                          |   9 [32m+[m
+ lab_02/example/events.jsonl                        |   4 [32m+[m
+ lab_02/example/events.txt                          |   8 [32m+[m
+ {lab_01 => lab_02}/pyproject.toml                  |   9 [32m+[m[31m-[m
+ lab_02/requirements-tests.txt                      |   2 [32m+[m
+ {lab_01 => lab_02}/requirements.txt                |   2 [32m+[m[31m-[m
+ lab_02/src/double.json                             |  28 [32m+++[m
+ lab_02/src/filtered.json                           |  22 [32m+++[m
+ lab_02/src/large-report.json                       |  42 [32m+++++[m
+ lab_02/src/report.json                             |  28 [32m+++[m
+ lab_02/src/skipped.json                            |  23 [32m+++[m
+ lab_02/src/streamstats/__init__.py                 |   1 [32m+[m
+ .../toolkit => lab_02/src/streamstats}/__main__.py |   3 [32m+[m[31m-[m
+ lab_02/src/streamstats/analysis.py                 |  81 [32m+++++++++[m
+ lab_02/src/streamstats/binary_parser.py            |   5 [32m+[m
+ lab_02/src/streamstats/cli.py                      |  82 [32m+++++++++[m
+ lab_02/src/streamstats/constants.py                |   7 [32m+[m
+ lab_02/src/streamstats/errors.py                   |  26 [32m+++[m
+ lab_02/src/streamstats/filter.py                   |  19 [32m++[m
+ lab_02/src/streamstats/follow.py                   |   4 [32m+[m
+ lab_02/src/streamstats/parsers.py                  | 108 [32m+++++++++++[m
+ lab_02/src/streamstats/report.py                   |  20 [32m++[m
+ lab_02/src/streamstats/validate.py                 |  52 [32m++++++[m
+ lab_02/tests/test_analysis.py                      |  44 [32m+++++[m
+ lab_02/tests/test_cli.py                           |  64 [32m+++++++[m
+ lab_02/tests/test_filter.py                        |  39 [32m++++[m
+ lab_02/tests/test_parsers.py                       | 132 [32m++++++++++++++[m
+ lab_02/tests/test_report.py                        |  31 [32m++++[m
+ 45 files changed, 1081 insertions(+), 798 deletions(-)
